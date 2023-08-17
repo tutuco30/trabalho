@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Corrida de Carros</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+    <script>
+      //adicionar config firebase
+      const firebaseConfig = {
+  apiKey: "AIzaSyDQLfdBFezi1Sm75UMyadGSCiYI7I58KTI",
+  authDomain: "balaozinhos-191ac.firebaseapp.com",
+  databaseURL: "https://balaozinhos-191ac-default-rtdb.firebaseio.com",
+  projectId: "balaozinhos-191ac",
+  storageBucket: "balaozinhos-191ac.appspot.com",
+  messagingSenderId: "282272789231",
+  appId: "1:282272789231:web:0849b0337b8a72f646e11a"
+};;
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+    <script src="./sketch.js"></script>
+  </body>
+</html>
